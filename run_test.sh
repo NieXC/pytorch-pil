@@ -1,5 +1,4 @@
-CUDA_VISIBLE_DEVICES=1 python main.py \
-                        --arch HG \
+CUDA_VISIBLE_DEVICES=0 python main.py \
                         --evaluate True \
                         --calc-pck True \
                         --resume exps/snapshots/pil_lip.pth.tar \
