@@ -67,7 +67,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py --evaluate True --calc-pck True --resume e
 
 Run the following command to evaluate the model on LIP `testing set`:
 ```
-CUDA_VISIBLE_DEVICES=0 python main.py --evaluate True --resume exps/snapshots/pil_lip_best.pth.tar --eval-anno dataset/lip/jsons/LIP_SP_TEST_annotations.json
+CUDA_VISIBLE_DEVICES=0 python main.py --evaluate True --resume exps/snapshots/pil_lip_best.pth.tar --eval-data dataset/lip/testing_images --eval-anno dataset/lip/jsons/LIP_SP_TEST_annotations.json
 ```
 
 In particular, results will be saved as a `.csv` file followed the official evaluation format of LIP dataset for single-person human pose estimation. An example is provided in `exps/preds/csv_results/pred_keypoints_lip.csv`.
