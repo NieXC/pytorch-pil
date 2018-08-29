@@ -1,4 +1,4 @@
 CUDA_VISIBLE_DEVICES=0,1 python main.py \
                         -b 24 \
                         --lr 0.0015 \
-                        #2>&1 | tee exps/logs/pil_lip_vgg.log \
+                        #2>&1 | tee exps/logs/pil_lip.log \
