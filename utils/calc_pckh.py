@@ -112,7 +112,7 @@ def calc_pck_lip_dataset(gt_path, pred_path, method_name='Ours', eval_num=5000):
 	assert gt.shape[2] == pred.shape[2], 'dim not matched'
 
     # PCK threshold range. 
-	pck_th_range = np.arange(0.50, 0.51, 0.01)
+	pck_th_range = np.array([0.50])
 
     # Get the reference distance for normalization
 	ref_dist = get_head_size(gt)
